@@ -1,0 +1,26 @@
+companies: {name: string, employees: number, marketCap: number, country: string, countryCode: string}[] = [
+  { name: "TechNova Solutions", employees: 250, marketCap: 1.2e9, country: "United States", countryCode: "US" },
+  { name: "GreenEdge Innovations", employees: 1200, marketCap: 5.6e9, country: "Germany", countryCode: "DE" },
+  { name: "FutureFoods Inc.", employees: 350, marketCap: 800e6, country: "Canada", countryCode: "CA" },
+  { name: "UrbanGrid Systems", employees: 75, marketCap: 150e6, country: "Australia", countryCode: "AU" },
+  { name: "HealthSphere Technologies", employees: 900, marketCap: 2.3e9, country: "United Kingdom", countryCode: "GB" },
+  { name: "AeroDynamics Corp.", employees: 1500, marketCap: 7.8e9, country: "Japan", countryCode: "JP" },
+  { name: "QuantumLogic Labs", employees: 50, marketCap: 600e6, country: "Switzerland", countryCode: "CH" },
+  { name: "EcoVision Enterprises", employees: 300, marketCap: 1.1e9, country: "Netherlands", countryCode: "NL" },
+  { name: "NextGen Robotics", employees: 450, marketCap: 3.4e9, country: "South Korea", countryCode: "KR" },
+  { name: "SolarPioneers Ltd.", employees: 200, marketCap: 1.5e9, country: "India", countryCode: "IN" }
+];
+
+
+
+// formatiranje novčanih iznosa
+// prema https://stackoverflow.com/questions/149055/how-to-format-numbers-as-currency-strings
+// Varijanta koja radi u Angularu
+formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  // These options can be used to round to whole numbers.
+  minimumFractionDigits: 0, // This suffices for whole numbers, but will
+                              // print 2500.10 as $2,500.1
+  maximumFractionDigits: 2, // Allows up to 2 decimal places
+});

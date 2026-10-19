@@ -1,0 +1,121 @@
+/* Reset some default spacing */
+body, h1, p, input, textarea, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f6f6;
+  color: #000;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #007575;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav-left {
+  margin-right: 20px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  background-color: #58a4a4;
+  border-radius: 4px;
+}
+
+/* Shared page content */
+main {
+  max-width: 90%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Profile Section */
+.profile-section .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-section h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.profile-section p {
+  margin-top: 10px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Project Section */
+.project-section h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.input-field,
+.textarea-field {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #888;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.textarea-field {
+  height: 120px;
+}
+
+.submit-btn {
+  background: none;
+  border: 2px solid #007575;
+  color: #007575;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #007575;
+  color: white;
+}
+
+/* About section */
+.about-section {
+  min-height: 300px; /* Keeps the layout visually clean even if empty */
+}
+
+/* Footer */
+footer {
+  background-color: #000d0d;
+  color: white;
+  text-align: right;
+  padding: 10px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}

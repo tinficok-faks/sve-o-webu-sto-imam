@@ -1,0 +1,23 @@
+<div class="container mt-3">
+  <h2>Upload & download</h2>
+
+  <form class="w-50" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+      <label for="file">Choose a file</label>
+      <input #fileinput id="file" name="file" type="file" class="form-control" (change)="onFileChange($event)">
+    </div>
+
+    <div class="form-group">
+      <label for="description">Additional description</label>
+      <textarea id="description" name="description" rows="2" class="form-control"
+        formControlName="description"></textarea>
+    </div>
+
+    <button class="btn btn-primary my-2" type="submit" [disabled]="form.invalid">Upload</button>
+  </form>
+
+  <p class="w-50">
+    <ngb-progressbar type="primary" [value]="percentage"></ngb-progressbar>
+  </p>
+
+</div>

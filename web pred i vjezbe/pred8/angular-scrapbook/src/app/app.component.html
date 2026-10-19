@@ -1,0 +1,55 @@
+<h3 class="display-4" (click)="handle($event)">We learn Angular</h3>
+<!--
+{{ messages[0] }}
+-->
+<div class="container">
+
+  <!--
+  
+  @for(message of messages; track message.id) {
+    <app-message [message]="message.text"></app-message>
+  }
+  -->
+
+  <!--
+  <app-message (feedback)="handle($event)" [message]="messages[0]"></app-message>
+  <app-message [message]="messages[1]"></app-message>
+  <app-message [(n)]="passedByReference"  [message]="messages[2]"></app-message>
+  -->
+  <!--
+  {{ passedByReference }}
+  -->
+
+  <!-- <app-card>
+    <h5 class="card-title">{{messages[1]}}</h5>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, pariatur.
+    </p>
+  </app-card> -->
+
+  <!-- if -->
+  <!-- @if(isAdmin) {
+    <h5>Admin panel</h5>
+    <button>Drop database</button>
+  } @else {
+    <h5>Unauthorized access</h5>
+  }   -->
+
+  <!--NgStyle & NgClass-->
+  <!-- 
+  <div class="squares" [ngClass]="{ 'd-flex': true, 'justify-content-around': true }">
+    <div [appFadeIn]="'gold'" class="square" [ngStyle]="setSquareStyle(0)"></div>
+    <div appFadeIn class="square" [ngStyle]="setSquareStyle(1)"></div>
+  </div>   -->
+
+  <!-- @if + ngOnDestroy -->
+
+  <!-- @if(show_message) {
+      <app-message  [message]="'I will be destroyed'"></app-message>
+    }
+    
+    <h3>Forms in Angular</h3>
+
+    <app-tdf></app-tdf> -->
+
+</div>

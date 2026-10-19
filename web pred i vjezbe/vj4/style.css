@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #212529dd;
+    border-bottom: 3px solid #198754;
+    box-shadow: 0px 3px 3px #198754;
+}
+
+#home-section {
+    height: 650px;
+    background: url("./home.jpg");
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+#home-section > .curtain {
+    background-color: #212529bb;
+}
+
+.check-outer {
+    width: 36px;
+    height: 36px;
+    font-size: 30px;
+}
+
+.img-container-left {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 100px;
+}
+
+#explore-img {
+    background-image: url("./explore.jpg");
+}
